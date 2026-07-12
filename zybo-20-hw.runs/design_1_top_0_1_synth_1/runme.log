@@ -1,0 +1,332 @@
+
+*** Running vivado
+    with args -log design_1_top_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_top_0_1.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Thu Jul  9 02:37:47 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_top_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 498.414 ; gain = 212.957
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ANKUSH_Psuedo-Disk/AUV/hdmi/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top design_1_top_0_1 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 36184
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1245.426 ; gain = 491.461
+---------------------------------------------------------------------------------
+
+*** Running vivado
+    with args -log design_1_top_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_top_0_1.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Thu Jul  9 02:38:38 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_top_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 499.223 ; gain = 212.918
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ANKUSH_Psuedo-Disk/AUV/hdmi/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top design_1_top_0_1 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28456
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1246.273 ; gain = 491.930
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_top_0_1' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_top_0_1/synth/design_1_top_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/top.v:2]
+	Parameter H_ACTIVE bound to: 1280 - type: integer 
+	Parameter H_TOTAL bound to: 1650 - type: integer 
+	Parameter THRESHOLD bound to: 11'b00001100100 
+INFO: [Synth 8-6157] synthesizing module 'rgb_to_gray' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/rgb_to_gray.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_to_gray' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/rgb_to_gray.v:2]
+INFO: [Synth 8-6157] synthesizing module 'window3x3' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/window3x3.v:2]
+	Parameter H_ACTIVE bound to: 1920 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'window3x3' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/window3x3.v:2]
+INFO: [Synth 8-6157] synthesizing module 'sobel_core' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/sobel_core.v:2]
+	Parameter THRESHOLD bound to: 11'b00001100100 
+INFO: [Synth 8-6155] done synthesizing module 'sobel_core' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/sobel_core.v:2]
+INFO: [Synth 8-6157] synthesizing module 'video_delay' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/video_delay.v:2]
+	Parameter DATA_WIDTH bound to: 27 - type: integer 
+	Parameter DELAY bound to: 1655 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'video_delay' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/video_delay.v:2]
+INFO: [Synth 8-6157] synthesizing module 'overlay' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/overlay.v:2]
+	Parameter COLOR bound to: 24'b111111110000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'overlay' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/overlay.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/top.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_top_0_1' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_top_0_1/synth/design_1_top_0_1.v:53]
+WARNING: [Synth 8-7129] Port p11[7] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p11[6] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p11[5] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p11[4] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p11[3] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p11[2] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p11[1] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p11[0] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsync_in in module window3x3 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1363.645 ; gain = 609.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1363.645 ; gain = 609.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1363.645 ; gain = 609.301
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1363.645 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1427.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1427.660 ; gain = 0.008
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1427.660 ; gain = 673.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1427.660 ; gain = 673.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1427.660 ; gain = 673.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1427.660 ; gain = 673.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   7 Input   12 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 3     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 18    
+	                1 Bit    Registers := 12    
++---RAMs : 
+	              43K Bit	(1655 X 27 bit)          RAMs := 1     
+	              15K Bit	(1920 X 8 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1428.367 ; gain = 674.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-----------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name      | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|design_1_top_0_1 | inst/u_window/line1_reg | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|design_1_top_0_1 | inst/u_delay/mem_reg    | 1 K x 27(READ_FIRST)   | W |   | 1 K x 27(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|design_1_top_0_1 | inst/u_window/line0_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-----------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1575.246 ; gain = 820.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1576.250 ; gain = 821.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-----------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name      | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|design_1_top_0_1 | inst/u_window/line1_reg | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|design_1_top_0_1 | inst/u_delay/mem_reg    | 1 K x 27(READ_FIRST)   | W |   | 1 K x 27(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|design_1_top_0_1 | inst/u_window/line0_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-----------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/u_window/line1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_delay/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_delay/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_window/line0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1604.883 ; gain = 850.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1820.359 ; gain = 1066.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1820.359 ; gain = 1066.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1820.359 ; gain = 1066.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1820.359 ; gain = 1066.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1821.445 ; gain = 1067.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1821.445 ; gain = 1067.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    58|
+|2     |LUT1     |     9|
+|3     |LUT2     |   111|
+|4     |LUT3     |    57|
+|5     |LUT4     |    47|
+|6     |LUT5     |    23|
+|7     |LUT6     |    29|
+|8     |RAMB18E1 |     3|
+|10    |RAMB36E1 |     1|
+|11    |FDRE     |   272|
+|12    |FDSE     |     8|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1821.445 ; gain = 1067.102
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1821.445 ; gain = 1003.086
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1821.445 ; gain = 1067.102
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1822.180 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1823.785 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 1b5a57ac
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 1823.785 ; gain = 1294.617
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1823.785 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/design_1_top_0_1_synth_1/design_1_top_0_1.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_top_0_1_utilization_synth.rpt -pb design_1_top_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  9 02:39:36 2026...

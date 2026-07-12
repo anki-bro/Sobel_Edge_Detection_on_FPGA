@@ -1,0 +1,22 @@
+{
+  "components": [
+    {
+      "hasAbsoluteProjectPath": true,
+      "extraPathToUnzip": [],
+      "prevProjectPath": "E:\\VivadoMigrations2025.1\\Zybo-Z7-20-HDMI-IO\\Zybo-Z7\\sw\\ws\\design_1_wrapper",
+      "name": "design_1_wrapper",
+      "type": "PLATFORM",
+      "embeddedPlatform": ""
+    },
+    {
+      "hasAbsoluteProjectPath": true,
+      "extraPathToUnzip": [],
+      "prevProjectPath": "E:\\VivadoMigrations2025.1\\Zybo-Z7-20-HDMI-IO\\Zybo-Z7\\sw\\ws\\Zybo-Z7-20-HDMI",
+      "name": "Zybo-Z7-20-HDMI",
+      "type": "HOST",
+      "embeddedPlatform": "design_1_wrapper"
+    }
+  ],
+  "system-project": [],
+  "com.ide.version": "2025.1"
+}

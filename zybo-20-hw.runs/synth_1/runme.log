@@ -1,0 +1,571 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Thu Jul  9 02:40:00 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 495.598 ; gain = 210.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ANKUSH_Psuedo-Disk/AUV/hdmi/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.srcs/sources_1/bd/design_1/design_1.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ design_1_xlconcat_0_0
+design_1_subset_converter_reset_0
+design_1_util_vector_logic_0_0
+Command: read_checkpoint -auto_incremental -incremental C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30380
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1311.598 ; gain = 493.270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dynclk_0_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_dynclk_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dynclk_0_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_dynclk_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_video_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_gpio_video_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_video_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_gpio_video_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_gp0_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:1061]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_ZD2IXJ' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:2870]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_ZD2IXJ' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:2870]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_13ZP1O6' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:2979]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_13ZP1O6' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:2979]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_Y154GK' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3106]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_Y154GK' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3106]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_15LWNJP' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3221]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_15LWNJP' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3221]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_WF9HZL' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3336]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_WF9HZL' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3336]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_119IHAT' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3451]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_gp0_imp_auto_pc_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_interconnect_gp0_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_gp0_imp_auto_pc_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_interconnect_gp0_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_119IHAT' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3451]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_gp0_imp_xbar_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_interconnect_gp0_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_gp0_imp_xbar_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_interconnect_gp0_imp_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (6) of port connection 'm_axi_arprot' does not match port width (15) of module 'design_1_axi_interconnect_gp0_imp_xbar_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:1849]
+WARNING: [Synth 8-689] width (6) of port connection 'm_axi_awprot' does not match port width (15) of module 'design_1_axi_interconnect_gp0_imp_xbar_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:1853]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_gp0_0' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:1061]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_hp0_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:1888]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_17E8JHA' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:2425]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_hp0_imp_auto_pc_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_interconnect_hp0_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_hp0_imp_auto_pc_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_interconnect_hp0_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_hp0_imp_m00_regslice_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_interconnect_hp0_imp_m00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_hp0_imp_m00_regslice_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_interconnect_hp0_imp_m00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_17E8JHA' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:2425]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_S4BDUK' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3697]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_hp0_imp_s00_regslice_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_interconnect_hp0_imp_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_hp0_imp_s00_regslice_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_interconnect_hp0_imp_s00_regslice_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_axi_interconnect_hp0_imp_s00_regslice_0' is unconnected for instance 's00_regslice' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3794]
+WARNING: [Synth 8-7023] instance 's00_regslice' of module 'design_1_axi_interconnect_hp0_imp_s00_regslice_0' has 34 connections declared, but only 33 given [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3794]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_S4BDUK' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3697]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_12AUBLP' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3830]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_hp0_imp_s01_regslice_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_interconnect_hp0_imp_s01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_hp0_imp_s01_regslice_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_interconnect_hp0_imp_s01_regslice_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_axi_interconnect_hp0_imp_s01_regslice_0' is unconnected for instance 's01_regslice' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3945]
+WARNING: [Synth 8-7023] instance 's01_regslice' of module 'design_1_axi_interconnect_hp0_imp_s01_regslice_0' has 40 connections declared, but only 39 given [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3945]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_12AUBLP' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:3830]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_hp0_imp_xbar_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_interconnect_hp0_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_hp0_imp_xbar_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_interconnect_hp0_imp_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_arready' does not match port width (2) of module 'design_1_axi_interconnect_hp0_imp_xbar_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:2396]
+WARNING: [Synth 8-689] width (64) of port connection 's_axi_rdata' does not match port width (128) of module 'design_1_axi_interconnect_hp0_imp_xbar_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:2413]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_rlast' does not match port width (2) of module 'design_1_axi_interconnect_hp0_imp_xbar_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:2414]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_rresp' does not match port width (4) of module 'design_1_axi_interconnect_hp0_imp_xbar_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:2416]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_rvalid' does not match port width (2) of module 'design_1_axi_interconnect_hp0_imp_xbar_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:2417]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'design_1_axi_interconnect_hp0_imp_xbar_0' is unconnected for instance 'xbar' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:2346]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'design_1_axi_interconnect_hp0_imp_xbar_0' is unconnected for instance 'xbar' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:2346]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_axi_interconnect_hp0_imp_xbar_0' has 78 connections declared, but only 76 given [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:2346]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_hp0_0' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:1888]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_vdma_0_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_vdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_vdma_0_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axi_vdma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_frame_ptr_out' of module 'design_1_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:663]
+WARNING: [Synth 8-7071] port 's2mm_frame_ptr_out' of module 'design_1_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:663]
+WARNING: [Synth 8-7023] instance 'axi_vdma_0' of module 'design_1_axi_vdma_0_0' has 67 connections declared, but only 65 given [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:663]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_subset_converter_in_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axis_subset_converter_in_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_subset_converter_in_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axis_subset_converter_in_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_subset_converter_out_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axis_subset_converter_out_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_subset_converter_out_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_axis_subset_converter_out_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'design_1_axis_subset_converter_out_0' is unconnected for instance 'axis_subset_converter_out' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:742]
+WARNING: [Synth 8-7023] instance 'axis_subset_converter_out' of module 'design_1_axis_subset_converter_out_0' has 14 connections declared, but only 13 given [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:742]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dvi2rgb_0_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_dvi2rgb_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dvi2rgb_0_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_dvi2rgb_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'aPixelClkLckd' of module 'design_1_dvi2rgb_0_0' is unconnected for instance 'dvi2rgb_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:756]
+WARNING: [Synth 8-7023] instance 'dvi2rgb_0' of module 'design_1_dvi2rgb_0_0' has 20 connections declared, but only 19 given [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:756]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:776]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:776]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:776]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'design_1_proc_sys_reset_0_0' has 10 connections declared, but only 7 given [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:776]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_fclk0_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_proc_sys_reset_fclk0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_fclk0_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_proc_sys_reset_fclk0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_fclk0_0' is unconnected for instance 'proc_sys_reset_fclk0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:784]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_fclk0_0' is unconnected for instance 'proc_sys_reset_fclk0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:784]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_fclk0_0' is unconnected for instance 'proc_sys_reset_fclk0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:784]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_fclk0' of module 'design_1_proc_sys_reset_fclk0_0' has 10 connections declared, but only 7 given [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:784]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_fclk1_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_proc_sys_reset_fclk1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_fclk1_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_proc_sys_reset_fclk1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_fclk1_0' is unconnected for instance 'proc_sys_reset_fclk1' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:792]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_fclk1_0' is unconnected for instance 'proc_sys_reset_fclk1' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:792]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_fclk1_0' is unconnected for instance 'proc_sys_reset_fclk1' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:792]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_fclk1' of module 'design_1_proc_sys_reset_fclk1_0' has 10 connections declared, but only 7 given [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:792]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:800]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:800]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:800]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:800]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:800]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:800]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 119 connections declared, but only 113 given [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:800]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rgb2dvi_1_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_rgb2dvi_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rgb2dvi_1_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_rgb2dvi_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_subset_converter_reset_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_subset_converter_reset_0/synth/design_1_subset_converter_reset_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_subset_converter_reset_0' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_subset_converter_reset_0/synth/design_1_subset_converter_reset_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_top_0_1' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_top_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_top_0_1' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_top_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_v_axi4s_vid_out_0_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_v_axi4s_vid_out_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_v_axi4s_vid_out_0_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_v_axi4s_vid_out_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'vid_vblank' of module 'design_1_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:942]
+WARNING: [Synth 8-7071] port 'vid_hblank' of module 'design_1_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:942]
+WARNING: [Synth 8-7071] port 'vid_field_id' of module 'design_1_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:942]
+WARNING: [Synth 8-7071] port 'locked' of module 'design_1_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:942]
+WARNING: [Synth 8-7071] port 'overflow' of module 'design_1_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:942]
+WARNING: [Synth 8-7071] port 'underflow' of module 'design_1_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:942]
+WARNING: [Synth 8-7071] port 'fifo_read_level' of module 'design_1_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:942]
+WARNING: [Synth 8-7071] port 'status' of module 'design_1_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:942]
+WARNING: [Synth 8-7071] port 'sof_state_out' of module 'design_1_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:942]
+WARNING: [Synth 8-7023] instance 'v_axi4s_vid_out_0' of module 'design_1_v_axi4s_vid_out_0_0' has 32 connections declared, but only 23 given [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:942]
+INFO: [Synth 8-6157] synthesizing module 'design_1_v_tc_in_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_v_tc_in_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_v_tc_in_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_v_tc_in_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_v_tc_out_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_v_tc_out_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_v_tc_out_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_v_tc_out_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'fsync_out' of module 'design_1_v_tc_out_0' is unconnected for instance 'v_tc_out' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:996]
+WARNING: [Synth 8-7023] instance 'v_tc_out' of module 'design_1_v_tc_out_0' has 33 connections declared, but only 32 given [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:996]
+INFO: [Synth 8-6157] synthesizing module 'design_1_v_vid_in_axi4s_0_0' [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_v_vid_in_axi4s_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_v_vid_in_axi4s_0_0' (0#1) [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/.Xil/Vivado-37308-Ankush/realtime/design_1_v_vid_in_axi4s_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'fid' of module 'design_1_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:1029]
+WARNING: [Synth 8-7071] port 'vtd_vblank' of module 'design_1_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:1029]
+WARNING: [Synth 8-7071] port 'vtd_hblank' of module 'design_1_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:1029]
+WARNING: [Synth 8-7071] port 'vtd_field_id' of module 'design_1_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:1029]
+WARNING: [Synth 8-7071] port 'overflow' of module 'design_1_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:1029]
+WARNING: [Synth 8-7071] port 'underflow' of module 'design_1_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:1029]
+WARNING: [Synth 8-7023] instance 'v_vid_in_axi4s_0' of module 'design_1_v_vid_in_axi4s_0_0' has 28 connections declared, but only 22 given [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:1029]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_7_xlconcat' [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_7_xlconcat' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81434]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81434]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In104[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1438.363 ; gain = 620.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1438.363 ; gain = 620.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1438.363 ; gain = 620.035
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1438.363 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_dynclk_0_0/design_1_axi_dynclk_0_0/design_1_axi_dynclk_0_0_in_context.xdc] for cell 'design_1_i/axi_dynclk_0'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_dynclk_0_0/design_1_axi_dynclk_0_0/design_1_axi_dynclk_0_0_in_context.xdc] for cell 'design_1_i/axi_dynclk_0'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/design_1_dvi2rgb_0_0/design_1_dvi2rgb_0_0_in_context.xdc] for cell 'design_1_i/dvi2rgb_0'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/design_1_dvi2rgb_0_0/design_1_dvi2rgb_0_0_in_context.xdc] for cell 'design_1_i/dvi2rgb_0'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_fclk0_0/design_1_proc_sys_reset_fclk0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_fclk0'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_fclk0_0/design_1_proc_sys_reset_fclk0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_fclk0'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_fclk1_0/design_1_proc_sys_reset_fclk1_0/design_1_proc_sys_reset_fclk1_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_fclk1'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_fclk1_0/design_1_proc_sys_reset_fclk1_0/design_1_proc_sys_reset_fclk1_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_fclk1'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_1_0/design_1_rgb2dvi_1_0/design_1_rgb2dvi_1_0_in_context.xdc] for cell 'design_1_i/rgb2dvi_1'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_1_0/design_1_rgb2dvi_1_0/design_1_rgb2dvi_1_0_in_context.xdc] for cell 'design_1_i/rgb2dvi_1'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_video_0/design_1_axi_gpio_video_0/design_1_axi_gpio_video_0_in_context.xdc] for cell 'design_1_i/axi_gpio_video'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_video_0/design_1_axi_gpio_video_0/design_1_axi_gpio_video_0_in_context.xdc] for cell 'design_1_i/axi_gpio_video'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_gp0_imp_xbar_0/design_1_axi_interconnect_gp0_imp_xbar_0/design_1_axi_interconnect_gp0_imp_xbar_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_gp0/xbar'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_gp0_imp_xbar_0/design_1_axi_interconnect_gp0_imp_xbar_0/design_1_axi_interconnect_gp0_imp_xbar_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_gp0/xbar'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_gp0_imp_auto_pc_0/design_1_axi_interconnect_gp0_imp_auto_pc_0/design_1_axi_interconnect_gp0_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_gp0/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_gp0_imp_auto_pc_0/design_1_axi_interconnect_gp0_imp_auto_pc_0/design_1_axi_interconnect_gp0_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_gp0/s00_couplers/auto_pc'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_hp0_imp_xbar_0/design_1_axi_interconnect_hp0_imp_xbar_0/design_1_axi_interconnect_hp0_imp_xbar_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp0/xbar'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_hp0_imp_xbar_0/design_1_axi_interconnect_hp0_imp_xbar_0/design_1_axi_interconnect_hp0_imp_xbar_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp0/xbar'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_hp0_imp_s00_regslice_0/design_1_axi_interconnect_hp0_imp_s00_regslice_0/design_1_axi_interconnect_hp0_imp_s00_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp0/s00_couplers/s00_regslice'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_hp0_imp_s00_regslice_0/design_1_axi_interconnect_hp0_imp_s00_regslice_0/design_1_axi_interconnect_hp0_imp_s00_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp0/s00_couplers/s00_regslice'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_hp0_imp_s01_regslice_0/design_1_axi_interconnect_hp0_imp_s01_regslice_0/design_1_axi_interconnect_hp0_imp_s01_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp0/s01_couplers/s01_regslice'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_hp0_imp_s01_regslice_0/design_1_axi_interconnect_hp0_imp_s01_regslice_0/design_1_axi_interconnect_hp0_imp_s01_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp0/s01_couplers/s01_regslice'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_hp0_imp_m00_regslice_0/design_1_axi_interconnect_hp0_imp_m00_regslice_0/design_1_axi_interconnect_hp0_imp_m00_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp0/m00_couplers/m00_regslice'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_hp0_imp_m00_regslice_0/design_1_axi_interconnect_hp0_imp_m00_regslice_0/design_1_axi_interconnect_hp0_imp_m00_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp0/m00_couplers/m00_regslice'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_hp0_imp_auto_pc_0/design_1_axi_interconnect_hp0_imp_auto_pc_0/design_1_axi_interconnect_hp0_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp0/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_hp0_imp_auto_pc_0/design_1_axi_interconnect_hp0_imp_auto_pc_0/design_1_axi_interconnect_hp0_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp0/m00_couplers/auto_pc'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_in_context.xdc] for cell 'design_1_i/axi_vdma_0'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_in_context.xdc] for cell 'design_1_i/axi_vdma_0'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_in_0/design_1_axis_subset_converter_in_0/design_1_axis_subset_converter_in_0_in_context.xdc] for cell 'design_1_i/axis_subset_converter_in'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_in_0/design_1_axis_subset_converter_in_0/design_1_axis_subset_converter_in_0_in_context.xdc] for cell 'design_1_i/axis_subset_converter_in'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_out_0/design_1_axis_subset_converter_out_0/design_1_axis_subset_converter_out_0_in_context.xdc] for cell 'design_1_i/axis_subset_converter_out'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_out_0/design_1_axis_subset_converter_out_0/design_1_axis_subset_converter_out_0_in_context.xdc] for cell 'design_1_i/axis_subset_converter_out'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'design_1_i/v_axi4s_vid_out_0'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'design_1_i/v_axi4s_vid_out_0'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_v_tc_in_0/design_1_v_tc_in_0/design_1_v_tc_in_0_in_context.xdc] for cell 'design_1_i/v_tc_in'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_v_tc_in_0/design_1_v_tc_in_0/design_1_v_tc_in_0_in_context.xdc] for cell 'design_1_i/v_tc_in'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_v_tc_out_0/design_1_v_tc_out_0/design_1_v_tc_out_0_in_context.xdc] for cell 'design_1_i/v_tc_out'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_v_tc_out_0/design_1_v_tc_out_0/design_1_v_tc_out_0_in_context.xdc] for cell 'design_1_i/v_tc_out'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_0/design_1_v_vid_in_axi4s_0_0/design_1_v_vid_in_axi4s_0_0_in_context.xdc] for cell 'design_1_i/v_vid_in_axi4s_0'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_0/design_1_v_vid_in_axi4s_0_0/design_1_v_vid_in_axi4s_0_0_in_context.xdc] for cell 'design_1_i/v_vid_in_axi4s_0'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_top_0_1/design_1_top_0_1/design_1_top_0_1_in_context.xdc] for cell 'design_1_i/top_0'
+Finished Parsing XDC File [c:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.gen/sources_1/bd/design_1/ip/design_1_top_0_1/design_1_top_0_1/design_1_top_0_1_in_context.xdc] for cell 'design_1_i/top_0'
+Parsing XDC File [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc]
+Finished Parsing XDC File [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1438.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1438.363 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/proc_sys_reset_0' at clock pin 'slowest_sync_clk' is different from the actual clock period '6.060', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/v_tc_in' at clock pin 'clk' is different from the actual clock period '6.060', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/v_vid_in_axi4s_0' at clock pin 'vid_io_in_clk' is different from the actual clock period '6.060', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1438.363 ; gain = 620.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1438.363 ; gain = 620.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1438.363 ; gain = 620.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1438.363 ; gain = 620.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1442.160 ; gain = 623.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1617.945 ; gain = 799.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1619.738 ; gain = 801.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1630.523 ; gain = 812.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1863.852 ; gain = 1045.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1863.852 ; gain = 1045.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1863.852 ; gain = 1045.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1863.852 ; gain = 1045.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1863.852 ; gain = 1045.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1863.852 ; gain = 1045.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------------------------+----------+
+|      |BlackBox name                                    |Instances |
++------+-------------------------------------------------+----------+
+|1     |design_1_axi_dynclk_0_0                          |         1|
+|2     |design_1_axi_gpio_video_0                        |         1|
+|3     |design_1_axi_interconnect_gp0_imp_xbar_0         |         1|
+|4     |design_1_axi_interconnect_gp0_imp_auto_pc_0      |         1|
+|5     |design_1_axi_interconnect_hp0_imp_xbar_0         |         1|
+|6     |design_1_axi_interconnect_hp0_imp_auto_pc_0      |         1|
+|7     |design_1_axi_interconnect_hp0_imp_m00_regslice_0 |         1|
+|8     |design_1_axi_interconnect_hp0_imp_s00_regslice_0 |         1|
+|9     |design_1_axi_interconnect_hp0_imp_s01_regslice_0 |         1|
+|10    |design_1_axi_vdma_0_0                            |         1|
+|11    |design_1_axis_subset_converter_in_0              |         1|
+|12    |design_1_axis_subset_converter_out_0             |         1|
+|13    |design_1_dvi2rgb_0_0                             |         1|
+|14    |design_1_proc_sys_reset_0_0                      |         1|
+|15    |design_1_proc_sys_reset_fclk0_0                  |         1|
+|16    |design_1_proc_sys_reset_fclk1_0                  |         1|
+|17    |design_1_processing_system7_0_0                  |         1|
+|18    |design_1_rgb2dvi_1_0                             |         1|
+|19    |design_1_top_0_1                                 |         1|
+|20    |design_1_util_vector_logic_0_0                   |         1|
+|21    |design_1_v_axi4s_vid_out_0_0                     |         1|
+|22    |design_1_v_tc_in_0                               |         1|
+|23    |design_1_v_tc_out_0                              |         1|
+|24    |design_1_v_vid_in_axi4s_0_0                      |         1|
++------+-------------------------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------------------+------+
+|      |Cell                                           |Count |
++------+-----------------------------------------------+------+
+|1     |design_1_axi_dynclk_0                          |     1|
+|2     |design_1_axi_gpio_video                        |     1|
+|3     |design_1_axi_interconnect_gp0_imp_auto_pc      |     1|
+|4     |design_1_axi_interconnect_gp0_imp_xbar         |     1|
+|5     |design_1_axi_interconnect_hp0_imp_auto_pc      |     1|
+|6     |design_1_axi_interconnect_hp0_imp_m00_regslice |     1|
+|7     |design_1_axi_interconnect_hp0_imp_s00_regslice |     1|
+|8     |design_1_axi_interconnect_hp0_imp_s01_regslice |     1|
+|9     |design_1_axi_interconnect_hp0_imp_xbar         |     1|
+|10    |design_1_axi_vdma_0                            |     1|
+|11    |design_1_axis_subset_converter_in              |     1|
+|12    |design_1_axis_subset_converter_out             |     1|
+|13    |design_1_dvi2rgb_0                             |     1|
+|14    |design_1_proc_sys_reset_0                      |     1|
+|15    |design_1_proc_sys_reset_fclk0                  |     1|
+|16    |design_1_proc_sys_reset_fclk1                  |     1|
+|17    |design_1_processing_system7_0                  |     1|
+|18    |design_1_rgb2dvi_1                             |     1|
+|19    |design_1_top_0                                 |     1|
+|20    |design_1_util_vector_logic_0                   |     1|
+|21    |design_1_v_axi4s_vid_out_0                     |     1|
+|22    |design_1_v_tc_in                               |     1|
+|23    |design_1_v_tc_out                              |     1|
+|24    |design_1_v_vid_in_axi4s_0                      |     1|
+|25    |IOBUF                                          |     4|
+|26    |OBUF                                           |     1|
++------+-----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1863.852 ; gain = 1045.523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1863.852 ; gain = 1045.523
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1863.852 ; gain = 1045.523
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1863.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1876.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+Synth Design complete | Checksum: 372d95d3
+INFO: [Common 17-83] Releasing license: Synthesis
+112 Infos, 163 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1876.633 ; gain = 1289.148
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1876.633 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/ANKUSH_Psuedo-Disk/AUV/hdmi/zybo-20-hw.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  9 02:40:51 2026...

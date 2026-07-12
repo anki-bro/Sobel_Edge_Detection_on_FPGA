@@ -1,0 +1,21 @@
+create libxil.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xadcps/src/libxadcps.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/vtc/src/libvtc.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/video_common/src/libvideo_common.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/usbps/src/libusbps.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartps/src/libuartps.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src/libsdps.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/scuwdt/src/libscuwdt.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/scutimer/src/libscutimer.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/scugic/src/libscugic.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/qspips/src/libqspips.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/iicps/src/libiicps.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src/libgpiops.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/libgpio.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src/libemacps.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/dmaps/src/libdmaps.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/devcfg/src/libdevcfg.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/coresightps_dcc/src/libcoresightps_dcc.a
+addlib C:/ANKUSH_Psuedo-Disk/AUV/hdmi/Zybo-Z7-20-HDMI-sw.ide/design_1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/axivdma/src/libaxivdma.a
+save
+end
