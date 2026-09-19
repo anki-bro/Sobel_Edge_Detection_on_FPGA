@@ -21,11 +21,11 @@ module rgb_to_gray (
             gray_out <= 8'd0;
             out_valid <= 1'b0;
         end else begin
-            r_term <= rgb_in[23:16] * 8'd77;
+            r_term <= rgb_in[23:16] * 8'd77;    //ITU-R BT.601 JPEG stndard
             g_term <= rgb_in[15:8]  * 8'd150;
             b_term <= rgb_in[7:0]   * 8'd29;
-            v1 <= in_valid;
-            gray_out <= (r_term + g_term + b_term) >> 8;
+            v1 <= in_valid;                     //delay valid one clock cycle
+            gray_out <= (r_term + g_term + b_term) >> 8; //weighted grayscale
             out_valid <= v1;
         end
     end

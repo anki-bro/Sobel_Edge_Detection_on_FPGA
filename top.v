@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 module top #(
     parameter H_ACTIVE = 1280,
-    parameter H_TOTAL = 1650,
+    parameter H_TOTAL = 1650,   // 1280 + 370(blanking) -- VESA standard
     parameter THRESHOLD = 11'd100
 ) (
     input  wire        pixel_clk,
@@ -21,7 +21,7 @@ module top #(
     wire [7:0] p00,p01,p02,p10,p11,p12,p20,p21,p22;
     wire mark_valid;
     wire mark;
-    wire [26:0] delayed_video;
+    wire [26:0] delayed_video;      //27 bits: de, hsync, vsync + 24-bit RGB
 
     rgb_to_gray u_gray (
         .clk(pixel_clk), .rst(rst), .in_valid(de_in), .rgb_in(rgb_in),

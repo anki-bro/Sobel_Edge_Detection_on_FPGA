@@ -25,7 +25,7 @@ module sobel_core #(
             abs_gx <= gx[11] ? (~gx[10:0] + 11'd1) : gx[10:0];
             abs_gy <= gy[11] ? (~gy[10:0] + 11'd1) : gy[10:0];
             v2 <= v1;
-            edge_mark <= (abs_gx + abs_gy) >= THRESHOLD;
+            edge_mark <= ((abs_gx + abs_gy) >= THRESHOLD) ? 1'b1 : 1'b0;
             edge_valid <= v2;
         end
     end
